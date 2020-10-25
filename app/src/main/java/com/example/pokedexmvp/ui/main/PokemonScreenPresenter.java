@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 public class PokemonScreenPresenter implements PokemonScreenContract.Presenter {
 
-    private PokemonScreenContract.Interactor interactor;
-    private PokemonScreenContract.View view;
+    private PokemonScreenInteractor interactor;
+    private PokemonScreenActivity view;
 
-    public PokemonScreenPresenter(PokemonScreenContract.View view) {
+    public PokemonScreenPresenter(PokemonScreenActivity view) {
         this.interactor = new PokemonScreenInteractor(this);
         this.view = view;
     }

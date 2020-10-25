@@ -1,0 +1,42 @@
+[
+    {
+      "firstName": "Alain",
+      "lastName": "Pereida Prado",
+      "email": "alain.pereida@gmail.com",
+      "password": "password"
+    },
+    {
+      "firstName": "Angelica",
+      "lastName": "Perez",
+      "email": "angelica.perez@hotmail.com",
+      "password": "password"
+    },
+    {
+      "firstName": "Cesar",
+      "lastName": "Bernal",
+      "email": "cesar.bernal@gmail.com",
+      "password": "password"
+    },
+    {
+      "firstName": "Jose Antonio",
+      "lastName": "Perez Trujillo",
+      "email": "jose.perez@inc.com",
+      "password": "password"
+    },
+    {
+      "firstName": "Jesus",
+      "lastName": "Delgado",
+      "email": "jesus_98@gmail.com",
+      "password": "password"
+    },
+    {
+      "firstName": "Alfredo",
+      "lastName": "Fernandez",
+      "email": "alfredo_10@hotmail.com",
+      "password": "password"
+    }
+]
+
+
+
+
