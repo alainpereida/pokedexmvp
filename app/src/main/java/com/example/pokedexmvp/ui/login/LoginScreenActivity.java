@@ -31,7 +31,7 @@ public class LoginScreenActivity extends AppCompatActivity implements LoginScree
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (verifyData(username) && verifyData(password)) {
+                if (verifyData(username) || verifyData(password)) {
                     presenter.login(username.getText().toString(), password.getText().toString());
                 }
             }

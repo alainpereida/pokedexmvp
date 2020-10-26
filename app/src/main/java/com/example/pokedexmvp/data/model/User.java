@@ -5,6 +5,9 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 
 public class User {
+
+    private static User user;
+
     @SerializedName("firstName")
     private String firstName;
 
@@ -19,15 +22,14 @@ public class User {
 
     private ArrayList<Pokemon> pokemons;
 
-    public User(String firstName, String last_name, String email_user, String password) {
+    private User(String firstName, String last_name, String email_user, String password) {
         this.firstName = firstName;
         this.last_name = last_name;
         this.email_user = email_user;
         this.password = password;
     }
 
-    public User() {
-    }
+    private User() { }
 
     public String getFirstName() {
         return firstName;
@@ -45,7 +47,30 @@ public class User {
         return password;
     }
 
-    public void setPokemons(ArrayList<Pokemon> pokemons){
-        this.pokemons = pokemons;
+    public static void setUser(User user) {
+        User.user = user;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    public void setEmail_user(String email_user) {
+        this.email_user = email_user;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public static User getInstance(){
+        if (user == null) {
+            user = new User();
+        }
+        return user;
     }
 }

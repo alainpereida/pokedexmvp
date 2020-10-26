@@ -76,7 +76,12 @@ public class ConsultSharedPreference {
         String password = getSharedPreferences().getString(PASSWORD_PREFERENCE_KEY, null);
         String first_name = getSharedPreferences().getString(FIRST_NAME_PREFERENCE_KEY, null);
         String last_name = getSharedPreferences().getString(LAST_NAME_PREFERENCE_KEY, null);
-        return new User(first_name, last_name,email,password);
+        User user = User.getInstance();
+        user.setFirstName(first_name);
+        user.setLast_name(last_name);
+        user.setEmail_user(email);
+        user.setPassword(password);
+        return user;
     }
 
     private SharedPreferences getSharedPreferences(){
